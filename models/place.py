@@ -7,20 +7,6 @@ from sqlalchemy.orm import relationship
 from os import getenv
 import models
 
-engine = create_engine('mysql://hbnb_dev:hbnb_dev_pwd@localhost/hbnb_dev_db')
-session = sessionmaker(bind=engine)()
-
-Base = declarative_base()
-
-class Amenity(Base):
-    __tablename__ = 'amenity'
-    id = Column(String(250), primary_key=True)
-    updated_at = Column(Date)
-    created_at = Column(Date)
-    name = Column(String(128), nullable=False)
-
-Base.metadata.create_all(engine)
-
 
 place_amenity = Table("place_amenity", Base.metadata,
                       Column("place_id", String(60),
