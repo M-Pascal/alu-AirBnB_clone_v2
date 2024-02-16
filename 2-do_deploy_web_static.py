@@ -1,10 +1,9 @@
 #!/usr/bin/python3
 """Fabric Script that distributes an archives"""
 
-
 from fabric.api import put, run, env
 from os.path import exists
-env.hosts = ['54.227.179.101', '3.90.204.71']
+env.hosts = ['54.173.223.112', '3.80.135.235']
 
 
 def do_deploy(archive_path):
