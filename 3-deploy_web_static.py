@@ -1,4 +1,5 @@
-tes and distributes an archive to a web server.
+#!/usr/bin/python3
+# creates and distributes an archive to a web server.
 import os.path
 from datetime import datetime
 from fabric.api import env
