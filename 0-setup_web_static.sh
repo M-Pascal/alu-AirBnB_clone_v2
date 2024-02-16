@@ -1,4 +1,5 @@
-tatic development
+#!/usr/bin/env bash
+# web static development
 
 sudo apt-get -y update
 sudo apt-get -y upgrade
